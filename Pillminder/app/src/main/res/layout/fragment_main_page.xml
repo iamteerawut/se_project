@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.se.pillminder.MainPage">
+    android:background="#7bb5c2"
+    tools:context="com.se.pillminder.PillPage">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -15,6 +16,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:textSize="24sp"
+            android:textColor="#4a4a4a"
             android:text="My Pills"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -32,7 +34,7 @@
             <ImageView
                 android:layout_marginLeft="10dp"
                 android:layout_gravity="center"
-                android:background="#55b1957c"
+                android:background="#55ff7800"
                 android:layout_width="60dp"
                 android:layout_height="60dp" />
 
@@ -89,7 +91,7 @@
             <ImageView
                 android:layout_marginLeft="10dp"
                 android:layout_gravity="center"
-                android:background="#55b1957c"
+                android:background="#55001aff"
                 android:layout_width="60dp"
                 android:layout_height="60dp" />
 
@@ -146,7 +148,7 @@
             <ImageView
                 android:layout_marginLeft="10dp"
                 android:layout_gravity="center"
-                android:background="#55b1957c"
+                android:background="#55ff0095"
                 android:layout_width="60dp"
                 android:layout_height="60dp" />
 
