@@ -4,8 +4,11 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,25 +19,25 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                    setTitle("Main Page");
-                    PillPage fragment = new PillPage();
-                    FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                    fragmentTransaction.replace(R.id.content, fragment, "FragmentName");
-                    fragmentTransaction.commit();
+                    setTitle("Pill Page");
+                    PillPage fragmentPill = new PillPage();
+                    FragmentTransaction fragmentTransactionPill = getSupportFragmentManager().beginTransaction();
+                    fragmentTransactionPill.replace(R.id.content, fragmentPill, "FragmentName");
+                    fragmentTransactionPill.commit();
                     return true;
                 case R.id.navigation_dashboard:
                     setTitle("Alert Page");
-                    AlertPage fragment2 = new AlertPage();
-                    FragmentTransaction fragmentTransaction2 = getSupportFragmentManager().beginTransaction();
-                    fragmentTransaction2.replace(R.id.content, fragment2, "FragmentName");
-                    fragmentTransaction2.commit();
+                    AlertPage fragmentAlert = new AlertPage();
+                    FragmentTransaction fragmentTransactionAlert = getSupportFragmentManager().beginTransaction();
+                    fragmentTransactionAlert.replace(R.id.content, fragmentAlert, "FragmentName");
+                    fragmentTransactionAlert.commit();
                     return true;
                 case R.id.navigation_notifications:
                     setTitle("Setting Page");
-                    SettingPage fragment3 = new SettingPage();
-                    FragmentTransaction fragmentTransaction3 = getSupportFragmentManager().beginTransaction();
-                    fragmentTransaction3.replace(R.id.content, fragment3, "FragmentName");
-                    fragmentTransaction3.commit();
+                    SettingPage fragmentSetting = new SettingPage();
+                    FragmentTransaction fragmentTransactionSetting = getSupportFragmentManager().beginTransaction();
+                    fragmentTransactionSetting.replace(R.id.content, fragmentSetting, "FragmentName");
+                    fragmentTransactionSetting.commit();
                     return true;
             }
             return false;
@@ -49,11 +52,23 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        setTitle("Main Page");
+        setTitle("Pill Page");
         PillPage fragment = new PillPage();
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.content, fragment, "FragmentName");
         fragmentTransaction.commit();
+
+        Button mAddPill = (Button) findViewById(R.id.editbutton);
+        mAddPill.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder mBuidler = new AlertDialog.Builder(MainActivity.this);
+                View mView = getLayoutInflater().inflate(R.layout.dialog_addpill, null);
+                mBuidler.setView(mView);
+                final AlertDialog dialog = mBuidler.create();
+                dialog.show();
+            }
+        });
     }
 
 }

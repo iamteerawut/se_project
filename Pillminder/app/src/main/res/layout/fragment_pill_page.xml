@@ -2,7 +2,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#7bb5c2"
     tools:context="com.se.pillminder.PillPage">
 
     <!-- TODO: Update blank fragment layout -->
@@ -77,6 +76,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
+            <Button
+                android:textColor="#FFF"
+                android:background="@drawable/bg_button"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:text="แก้ไข"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editbutton"/>
+
         </LinearLayout>
 
         <LinearLayout
@@ -134,6 +143,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
+            <Button
+                android:textColor="#FFF"
+                android:background="@drawable/bg_button"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:text="แก้ไข"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -188,6 +206,15 @@
                 android:layout_marginRight="10dp"
                 android:layout_gravity="center"
                 android:text="กินยา"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:textColor="#FFF"
+                android:background="@drawable/bg_button"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:text="แก้ไข"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
