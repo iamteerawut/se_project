@@ -84,7 +84,7 @@
                 android:text="แก้ไข"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/editbutton"/>
+                android:id="@+id/add_pill"/>
 
         </LinearLayout>
 
@@ -220,7 +220,13 @@
 
         </LinearLayout>
 
-    </LinearLayout>
+        <Button
+            android:id="@+id/button"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="เพิ่มข้อมูลยา" />
 
+    </LinearLayout>
 
 </FrameLayout>

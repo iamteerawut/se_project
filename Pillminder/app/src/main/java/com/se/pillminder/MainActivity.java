@@ -18,21 +18,21 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
-                case R.id.navigation_home:
+                case R.id.navigation_pill:
                     setTitle("Pill Page");
                     PillPage fragmentPill = new PillPage();
                     FragmentTransaction fragmentTransactionPill = getSupportFragmentManager().beginTransaction();
                     fragmentTransactionPill.replace(R.id.content, fragmentPill, "FragmentName");
                     fragmentTransactionPill.commit();
                     return true;
-                case R.id.navigation_dashboard:
+                case R.id.navigation_alarm:
                     setTitle("Alert Page");
                     AlertPage fragmentAlert = new AlertPage();
                     FragmentTransaction fragmentTransactionAlert = getSupportFragmentManager().beginTransaction();
                     fragmentTransactionAlert.replace(R.id.content, fragmentAlert, "FragmentName");
                     fragmentTransactionAlert.commit();
                     return true;
-                case R.id.navigation_notifications:
+                case R.id.navigation_setting:
                     setTitle("Setting Page");
                     SettingPage fragmentSetting = new SettingPage();
                     FragmentTransaction fragmentTransactionSetting = getSupportFragmentManager().beginTransaction();
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.content, fragment, "FragmentName");
         fragmentTransaction.commit();
 
-        Button mAddPill = (Button) findViewById(R.id.editbutton);
+        Button mAddPill = (Button) findViewById(R.id.add_pill);
         mAddPill.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
