@@ -5,6 +5,18 @@
     tools:context="com.se.pillminder.PillPage">
 
     <!-- TODO: Update blank fragment layout -->
+
+
+    <!--<android.support.constraint.ConstraintLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<ListView-->
+            <!--android:id="@+id/listviewID"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+    <!--</android.support.constraint.ConstraintLayout>-->
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -26,7 +38,6 @@
             android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"
             android:orientation="horizontal"
-            android:background="@drawable/layout_border"
             android:layout_width="match_parent"
             android:layout_height="80dp">
 
@@ -69,22 +80,12 @@
 
             <Button
                 android:textColor="#FFF"
-                android:background="@drawable/bg_button"
-                android:layout_marginRight="10dp"
-                android:layout_gravity="center"
-                android:text="กินยา"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <Button
-                android:textColor="#FFF"
-                android:background="@drawable/bg_button"
                 android:layout_marginRight="10dp"
                 android:layout_gravity="center"
                 android:text="แก้ไข"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/add_pill"/>
+                android:id="@+id/edit_pill1"/>
 
         </LinearLayout>
 
@@ -93,7 +94,6 @@
             android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"
             android:orientation="horizontal"
-            android:background="@drawable/layout_border"
             android:layout_width="match_parent"
             android:layout_height="80dp">
 
@@ -136,21 +136,12 @@
 
             <Button
                 android:textColor="#FFF"
-                android:background="@drawable/bg_button"
-                android:layout_marginRight="10dp"
-                android:layout_gravity="center"
-                android:text="กินยา"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <Button
-                android:textColor="#FFF"
-                android:background="@drawable/bg_button"
                 android:layout_marginRight="10dp"
                 android:layout_gravity="center"
                 android:text="แก้ไข"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_pill12"/>
 
         </LinearLayout>
 
@@ -159,7 +150,6 @@
             android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"
             android:orientation="horizontal"
-            android:background="@drawable/layout_border"
             android:layout_width="match_parent"
             android:layout_height="80dp">
 
@@ -202,26 +192,17 @@
 
             <Button
                 android:textColor="#FFF"
-                android:background="@drawable/bg_button"
-                android:layout_marginRight="10dp"
-                android:layout_gravity="center"
-                android:text="กินยา"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <Button
-                android:textColor="#FFF"
-                android:background="@drawable/bg_button"
                 android:layout_marginRight="10dp"
                 android:layout_gravity="center"
                 android:text="แก้ไข"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_pill13"/>
 
         </LinearLayout>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/add_button"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
