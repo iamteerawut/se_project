@@ -6,19 +6,184 @@
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
-        android:background="#606060"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/content"
-            android:textColor="#fff"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:textSize="24sp"
-            android:text="My Alerts"
+            android:textColor="#4a4a4a"
+            android:text="My Alarms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="80dp">
+
+            <ImageView
+                android:id="@+id/pill_img"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:background="#55ff7800"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="ยาความดัน"
+                    android:textSize="18sp"
+                    android:textColor="#4a4a4a"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:text="กินกี่โมงดี"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:background="#55001aff"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="ยาความดัน"
+                    android:textSize="18sp"
+                    android:textColor="#4a4a4a"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:text="กินกี่โมงดี"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:background="#55ff0095"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="ยาความดัน"
+                    android:textSize="18sp"
+                    android:textColor="#4a4a4a"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:text="กินกี่โมงดี"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+
+            <Switch
+                android:id="@+id/switch3"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
     </LinearLayout>
 
 </FrameLayout>
