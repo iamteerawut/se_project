@@ -4,12 +4,17 @@
     <item
         android:id="@+id/navigation_pill"
         android:icon="@drawable/pill_filled"
-        android:title="Pills" />
+        android:title="Pill" />
 
     <item
         android:id="@+id/navigation_alert"
         android:icon="@drawable/alarm_clock"
-        android:title="Alarms" />
+        android:title="Alarm" />
+
+    <item
+        android:id="@+id/navigation_history"
+        android:icon="@drawable/past"
+        android:title="History" />
 
     <item
         android:id="@+id/navigation_setting"

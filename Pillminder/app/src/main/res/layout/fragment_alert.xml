@@ -16,7 +16,7 @@
             android:layout_marginLeft="20dp"
             android:textSize="24sp"
             android:textColor="#4a4a4a"
-            android:text="My Alarms"
+            android:text="My Alarm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 

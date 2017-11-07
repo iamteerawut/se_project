@@ -3,7 +3,6 @@ package com.se.pillminder;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
@@ -20,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_alert:
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, AlertFragment.newInstance()).commit();
+                    return true;
+                case R.id.navigation_history:
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, HistoryFragment.newInstance()).commit();
                     return true;
                 case R.id.navigation_setting:
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, SettingFragment.newInstance()).commit();
