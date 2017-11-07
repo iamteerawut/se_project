@@ -7,7 +7,7 @@
         android:title="Pills" />
 
     <item
-        android:id="@+id/navigation_alarm"
+        android:id="@+id/navigation_alert"
         android:icon="@drawable/alarm_clock"
         android:title="Alarms" />
 

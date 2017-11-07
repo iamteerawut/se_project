@@ -11,11 +11,18 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class AlertPage extends Fragment {
+public class SettingFragment extends Fragment {
 
 
-    public AlertPage() {
+    public SettingFragment() {
         // Required empty public constructor
+    }
+
+    public static SettingFragment newInstance() {
+        SettingFragment fragment = new SettingFragment();
+        Bundle args = new Bundle();
+        fragment.setArguments(args);
+        return fragment;
     }
 
 
@@ -23,7 +30,7 @@ public class AlertPage extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_alert_page, container, false);
+        return inflater.inflate(R.layout.fragment_setting, container, false);
     }
 
 }

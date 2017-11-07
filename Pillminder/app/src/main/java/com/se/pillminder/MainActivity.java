@@ -16,25 +16,13 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_pill:
-                    //setTitle("Pill Page");
-                    PillPage fragmentPill = new PillPage();
-                    FragmentTransaction fragmentTransactionPill = getSupportFragmentManager().beginTransaction();
-                    fragmentTransactionPill.replace(R.id.content, fragmentPill, "FragmentName");
-                    fragmentTransactionPill.commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, PillFragment.newInstance()).commit();
                     return true;
-                case R.id.navigation_alarm:
-                    //setTitle("Alert Page");
-                    AlertPage fragmentAlert = new AlertPage();
-                    FragmentTransaction fragmentTransactionAlert = getSupportFragmentManager().beginTransaction();
-                    fragmentTransactionAlert.replace(R.id.content, fragmentAlert, "FragmentName");
-                    fragmentTransactionAlert.commit();
+                case R.id.navigation_alert:
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, AlertFragment.newInstance()).commit();
                     return true;
                 case R.id.navigation_setting:
-                    //setTitle("Setting Page");
-                    SettingPage fragmentSetting = new SettingPage();
-                    FragmentTransaction fragmentTransactionSetting = getSupportFragmentManager().beginTransaction();
-                    fragmentTransactionSetting.replace(R.id.content, fragmentSetting, "FragmentName");
-                    fragmentTransactionSetting.commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, SettingFragment.newInstance()).commit();
                     return true;
             }
             return false;
@@ -49,11 +37,7 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        //setTitle("Pill Page");
-        PillPage fragment = new PillPage();
-        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.content, fragment, "FragmentName");
-        fragmentTransaction.commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, PillFragment.newInstance()).commit();
 
     }
 
