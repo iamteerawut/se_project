@@ -37,7 +37,6 @@ public class PillFragment extends Fragment {
         // Inflate the layout for this fragment
         this.rootView = inflater.inflate(R.layout.fragment_pill, container, false);
 
-
         Button edit_pill = rootView.findViewById(R.id.edit_pill1);
         edit_pill.setOnClickListener(new View.OnClickListener() {
             @Override
