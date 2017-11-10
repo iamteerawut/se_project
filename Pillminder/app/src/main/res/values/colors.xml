@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    
     <color name="funny_dark_pink">#d94e6d</color>
     <color name="soft_red">#ef4c43</color>
     <color name="seasonal_orange">#ffc73c</color>
