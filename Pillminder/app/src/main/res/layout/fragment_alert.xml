@@ -6,6 +6,7 @@
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
+        android:background="#a28fc1"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
