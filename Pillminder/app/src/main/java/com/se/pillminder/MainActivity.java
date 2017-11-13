@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        checkFirstRun();
+        isFirstRun();
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
@@ -46,35 +46,20 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void checkFirstRun() {
-        final String PREFS_NAME = "MyPrefsFile";
-        final String PREF_VERSION_CODE_KEY = "version_code";
-        final int DOESNT_EXIST = -1;
+    private void isFirstRun() {
+        final String PREFS_NAME = "AppPreferences";
+        final String KEY_FIRSTRUN = "FirstRun";
 
-        // Get current version code
-        int currentVersionCode = BuildConfig.VERSION_CODE;
+        SharedPreferences sp;
+        SharedPreferences.Editor editor;
 
-        // Get saved version code
-        SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
-        int savedVersionCode = prefs.getInt(PREF_VERSION_CODE_KEY, DOESNT_EXIST);
+        sp = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+        editor = sp.edit();
 
-        // Check for first run or upgrade
-        if (currentVersionCode == savedVersionCode) {
+        boolean isFirstRun = sp.getBoolean(KEY_FIRSTRUN, false);
+        editor.putBoolean(KEY_FIRSTRUN, true);
+        editor.commit();
 
-            // This is just a normal run
-            return;
-
-        } else if (savedVersionCode == DOESNT_EXIST) {
-
-            // TODO This is a new install (or the user cleared the shared preferences)
-
-        } else if (currentVersionCode > savedVersionCode) {
-
-            // TODO This is an upgrade
-        }
-
-        // Update the shared preferences with the current version code
-        prefs.edit().putInt(PREF_VERSION_CODE_KEY, currentVersionCode).apply();
     }
 
 }
