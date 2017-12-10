@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pillbox.activity.MainActivity">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true">
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <!-- app: itemBackground: background color for bottom navigation menu
+        app:itemIcontTint: The tint to be used for the icons in the bottom navigation menu
+        app:itemTextColor: The Color to be used for the text in the bottom navigation menu
+        app:menu: the menu resource to be used to display items in the bottom navigation menu
+    -->
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="#8cc694"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/bottom_navigation_main">
+
+    </android.support.design.widget.BottomNavigationView>
+
+</RelativeLayout>

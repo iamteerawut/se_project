@@ -1,0 +1,103 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:baselineAligned="false"
+    tools:context=".activity.ScanMedActivity" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+        <!-- Capture picture button -->
+        <TextView
+            android:id="@+id/scan_med_instruct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold|normal"
+            android:gravity="center"
+            android:text="@string/scan_instruct_crop"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.theartofdev.edmodo.cropper.CropImageView
+                android:id="@+id/cropImgPreview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.theartofdev.edmodo.cropper.CropImageView>
+
+            <com.theartofdev.edmodo.cropper.CropImageView
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imgDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                custom:cropGuidelines="on"
+                custom:cropAutoZoomEnabled="false"
+                custom:cropBorderLineColor="@android:color/holo_red_dark"
+                custom:cropGuidelinesColor="@android:color/holo_green_dark"
+                custom:cropBorderLineThickness="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold|normal"
+                android:text="Display Label Recognition"/>
+            <EditText
+                android:id="@+id/scan_med_display"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:inputType="textMultiLine">
+            </EditText>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/camera_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_menu_rotate"
+        android:tint="@color/white" />
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imgPreview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--tools:layout_editor_absoluteY="8dp" />-->
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
