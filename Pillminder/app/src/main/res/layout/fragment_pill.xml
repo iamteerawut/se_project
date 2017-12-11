@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#b5d682"
     tools:context="com.se.pillminder.Fragment.PillFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -17,7 +18,6 @@
     <!--</android.support.constraint.ConstraintLayout>-->
 
     <LinearLayout
-        android:background="#b5d682"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
