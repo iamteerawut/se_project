@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/displayTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="20dp"
+        android:text="Report"
+        android:textSize="30sp"/>
+    <TextView
+        android:id="@+id/displayAdherenceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/displayTitle"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="100dp"
+        android:text="Adherence Rate"
+        android:textSize="25sp"/>
+    <ProgressBar
+        android:id="@+id/circularProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        android:layout_below="@id/displayAdherenceTitle"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:indeterminate="false"
+        android:max="60"
+        android:progress="30"
+        android:progressDrawable="@drawable/progressbar" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="20sp"/>
+
+
+
+</RelativeLayout>
+

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pillbox.activity.AddMedActivity"
+    android:background="@drawable/setting">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:paddingLeft="25dp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="เช้า"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:layout_marginBottom="150dp"
+                    android:id="@+id/set_morning"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/rounded_edittext" />
+
+                <TextView
+                    android:layout_marginTop="-9dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="เย็น"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/set_evening"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/rounded_edittext"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingRight="25dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:text="กลางวัน" />
+
+                <EditText
+                    android:layout_marginBottom="150dp"
+                    android:id="@+id/set_afternoon"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/rounded_edittext"/>
+
+                <TextView
+                    android:layout_marginTop="-9dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:text="ก่อนนอน" />
+
+                <EditText
+                    android:id="@+id/set_night"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/rounded_edittext"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
