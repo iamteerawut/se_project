@@ -32,10 +32,10 @@ public class SettingsActivity extends AppCompatActivity {
 
     private SharedPreferences sharedpreferences;
 
-    private EditText mSetMorning;
-    private EditText mSetAfternoon;
-    private EditText mSetEvening;
-    private EditText mSetNight;
+    private TextView mSetMorning;
+    private TextView mSetAfternoon;
+    private TextView mSetEvening;
+    private TextView mSetNight;
 
     private TextView mToolbarTitle;
     private Toolbar mToolbar;
@@ -55,10 +55,10 @@ public class SettingsActivity extends AppCompatActivity {
         // Enable the Up button
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-        mSetMorning = (EditText)findViewById(R.id.set_morning);
-        mSetAfternoon = (EditText)findViewById(R.id.set_afternoon);
-        mSetEvening = (EditText)findViewById(R.id.set_evening);
-        mSetNight = (EditText)findViewById(R.id.set_night);
+        mSetMorning = (TextView)findViewById(R.id.set_morning);
+        mSetAfternoon = (TextView)findViewById(R.id.set_afternoon);
+        mSetEvening = (TextView)findViewById(R.id.set_evening);
+        mSetNight = (TextView)findViewById(R.id.set_night);
 
 
         updateTextLabels();
