@@ -1,4 +1,4 @@
-package com.example.pillbox.fragments;
+package com.example.pillbox.model;
 
 import android.app.DatePickerDialog;
 import android.app.Fragment;

@@ -7,7 +7,6 @@ import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -18,7 +17,6 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.app.NotificationCompat;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -30,9 +28,9 @@ import com.example.pillbox.R;
 import com.example.pillbox.adapter.NotificationPublisher;
 import com.example.pillbox.data.MedicationContract;
 import com.example.pillbox.data.MedicationDbHelper;
-import com.example.pillbox.fragments.DisplayMedsFragment;
-import com.example.pillbox.fragments.PillBoxFragment;
-import com.example.pillbox.fragments.ReportFragment;
+import com.example.pillbox.model.DisplayMedsFragment;
+import com.example.pillbox.model.PillBoxFragment;
+import com.example.pillbox.model.ReportFragment;
 
 import java.util.Calendar;
 

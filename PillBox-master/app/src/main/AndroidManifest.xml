@@ -58,9 +58,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.pillbox.activity.MainActivity" />
         </activity>
-        <activity
-            android:name=".activity.ScanMedActivity"
-            android:screenOrientation="portrait" />
         <activity android:name=".activity.SettingsActivity" />
 
         <activity android:name=".activity.TakeMedActivity"

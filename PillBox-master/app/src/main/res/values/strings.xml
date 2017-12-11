@@ -7,35 +7,41 @@
 
     <string name="action_add_med">Add</string>
 
-    <string name="med_name">Enter Drug Name</string>
-    <string name="dosage">Enter Dosage </string>
+    <string name="med_name">ระบุชื่อยา</string>
+    <string name="dosage">รับประทานครั้งละ </string>
     <string name="frequency">Enter Frequency</string>
-    <string name="before_food">Before Food</string>
-    <string name="amount">Enter Amount</string>
-    <string name="units">Enter Units</string>
+    <string name="before_food">ก่อนอาหาร</string>
+    <string name="amount">ปริมาณยาทั้งหมด</string>
+    <string name="units">หน่วย</string>
 
-    <string name="med_name_label">Name:</string>
-    <string name="dosage_label">Dosage:</string>
+    <string name="med_name_label">ชื่อยา:</string>
+    <string name="dosage_label">รับประทานครั้งละ:</string>
     <string name="frequency_label">Frequency:</string>
-    <string name="before_food_label">Before Food:</string>
-    <string name="amount_label">Amount:</string>
-    <string name="units_label">Units:</string>
+    <string name="before_food_label">ก่อนอาหาร:</string>
+    <string name="amount_label">ปริมาณยาทั้งหมด:</string>
+    <string name="units_label">หน่วย:</string>
 
     <string name="start_date_label">Start Date:</string>
     <string name="end_date_label">End Date:</string>
 
-    <string name="units_prompt">Select Unit</string>
+    <string name="units_prompt">ระบุหน่วย</string>
 
     <string-array name="units_array">
-        <item>Tab (MG)</item>
-        <item>Syrup (ML)</item>
+        <item>ช้อนชา</item>
+        <item>ช้อนโต๊ะ</item>
+        <item>เม็ด</item>
+        <item>แคปซูล</item>
+        <item>มิลลิลิตร</item>
+        <item>มิลลิกรัม</item>
+        <item>ออนซ์</item>
+        <item>อื่น ๆ </item>
     </string-array>
 
     <string name="before_food_prompt">Select Before Food</string>
     <string-array name="before_food_array">
-        <item>Before / After Food</item>
-        <item>Before Food</item>
-        <item>After Food</item>
+        <item>ก่อนและหลังอาหาร</item>
+        <item>ก่อนอาหาร</item>
+        <item>หลังอาหาร</item>
     </string-array>
 
     <!--<string name="freq_prompt">Medication Frequency</string>-->

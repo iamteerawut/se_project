@@ -83,7 +83,6 @@ public class AddMedActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         // Enable the Up button
         actionBar.setDisplayHomeAsUpEnabled(true);
-        setUpFloatingActionButton();
 
         mPrevActivity = getIntent().getStringExtra("PREV_ACTIVITY");
         if(mPrevActivity.equals("ScanMedActivity")){
@@ -123,15 +122,6 @@ public class AddMedActivity extends AppCompatActivity {
         }
     }
 
-    private void setUpFloatingActionButton(){
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.camera_fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
