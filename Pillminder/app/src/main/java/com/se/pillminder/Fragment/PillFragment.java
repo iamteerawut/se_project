@@ -70,26 +70,28 @@ public class PillFragment extends Fragment {
         add_pill.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                getFragmentManager().getFragments(R.id.fragment_container, addPillFragment.newInstance().getContext());
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, PillFragment.newInstance()).commit();
                 final Dialog dialog = new Dialog(PillFragment.this.getContext());
-                dialog.setContentView(R.layout.dialog_addpill);
+                dialog.setContentView(R.layout.fragment_add_pill);
 
-                Button ok_action = (Button) dialog.findViewById(R.id.ok_action);
-                Button cancel_action = (Button) dialog.findViewById(R.id.cancel_action);
-
-                ok_action.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        dialog.dismiss();
-                    }
-                });
-
-                cancel_action.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        dialog.dismiss();
-                    }
-                });
-                dialog.show();
+//                Button ok_action = (Button) dialog.findViewById(R.id.ok_action);
+//                Button cancel_action = (Button) dialog.findViewById(R.id.cancel_action);
+//
+//                ok_action.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        dialog.dismiss();
+//                    }
+//                });
+//
+//                cancel_action.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        dialog.dismiss();
+//                    }
+//                });
+//                dialog.show();
             }
         });
 

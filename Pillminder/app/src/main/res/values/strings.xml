@@ -5,6 +5,41 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_pillbox">Pill Box</string>
+    <string name="text_display_meds">View Medications</string>
+    <string name="text_report">Report</string>
+
+    <string name="action_add_med">Add</string>
+
+    <string name="med_name">Enter Drug Name</string>
+    <string name="dosage">Enter Dosage </string>
+    <string name="frequency">Enter Frequency</string>
+    <string name="before_food">Before Food</string>
+    <string name="amount">Enter Amount</string>
+    <string name="units">Enter Units</string>
+
+    <string name="med_name_label">Name:</string>
+    <string name="dosage_label">Dosage:</string>
+    <string name="frequency_label">Frequency:</string>
+    <string name="before_food_label">Before Food:</string>
+    <string name="amount_label">Amount:</string>
+    <string name="units_label">Units:</string>
+
+    <string name="start_date_label">Start Date:</string>
+    <string name="end_date_label">End Date:</string>
+
+    <string name="units_prompt">Select Unit</string>
+
+    <string-array name="units_array">
+        <item>Tab (MG)</item>
+        <item>Syrup (ML)</item>
+    </string-array>
+
+    <string name="before_food_prompt">Select Before Food</string>
+    <string-array name="before_food_array">
+        <item>Before / After Food</item>
+        <item>Before Food</item>
+        <item>After Food</item>
+    </string-array>
+
 </resources>
