@@ -24,10 +24,11 @@ public class TakeMedicationDBHelper extends SQLiteOpenHelper{
                 TakeMedicationContract.TakeMedicationEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 TakeMedicationContract.TakeMedicationEntry.COL_MED_ID + " INTEGER NOT NULL, " +
                 TakeMedicationContract.TakeMedicationEntry.COL_MED_DATE + " TEXT NOT NULL, " +
-                TakeMedicationContract.TakeMedicationEntry.COL_MED_CONSUMPTION + " TEXT NOT NULL, " +
+                TakeMedicationContract.TakeMedicationEntry.COL_MED_CONSUMPTION + " TEXT NOT NULL" +
                 ");";
         // Execute query by calling execSQL on SQLiteDatabase db and pass the string to create the db
         db.execSQL(SQL_CREATE_TAKE_MEDICATION_TABLE);
+
     }
 
     @Override
