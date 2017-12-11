@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clickable="true"
-    tools:context="com.se.pillminder.ProgressFragment">
+    tools:context="com.se.pillminder.Fragment.ProgressFragment">
 
     <ProgressBar
         android:layout_width="wrap_content"

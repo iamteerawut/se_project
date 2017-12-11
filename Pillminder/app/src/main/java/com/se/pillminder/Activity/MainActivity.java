@@ -1,4 +1,4 @@
-package com.se.pillminder;
+package com.se.pillminder.Activity;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -6,6 +6,12 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+
+import com.se.pillminder.Fragment.AlertFragment;
+import com.se.pillminder.Fragment.HistoryFragment;
+import com.se.pillminder.Fragment.PillFragment;
+import com.se.pillminder.R;
+import com.se.pillminder.Fragment.SettingFragment;
 
 public class MainActivity extends AppCompatActivity {
 
