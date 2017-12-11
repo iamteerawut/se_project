@@ -70,7 +70,7 @@ public class PillFragment extends Fragment {
         add_pill.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                
+
                 final Dialog dialog = new Dialog(PillFragment.this.getContext());
                 dialog.setContentView(R.layout.fragment_add_pill);
 
