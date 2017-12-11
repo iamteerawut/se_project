@@ -84,6 +84,7 @@ public class AddMedActivity extends AppCompatActivity {
         // Enable the Up button
         actionBar.setDisplayHomeAsUpEnabled(true);
 
+
         mPrevActivity = getIntent().getStringExtra("PREV_ACTIVITY");
         if(mPrevActivity.equals("ScanMedActivity")){
             autoFillInput();

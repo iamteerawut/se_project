@@ -41,10 +41,6 @@ public class MainActivity extends AppCompatActivity {
     private Toolbar mToolbar;
     private String mTagName;
     private CoordinatorLayout coordinatorLayout;
-    private int mClinidId = -1;
-    private final CharSequence[] mClinicValues = {"Changi General Hospital","Ng Teng Fong General Hospital",
-            "National University Hospital", "Khoo Teck Puat Hospital","Singapore General Hospital"
-            ,"Tan Tock Seng Hospital","KK Women's and Children's Hospital"," Manual Input "};
 
     NotificationManager notificationManager;
 
