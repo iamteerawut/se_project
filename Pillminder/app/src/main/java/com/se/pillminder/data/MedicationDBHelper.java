@@ -34,7 +34,7 @@ public class MedicationDBHelper extends SQLiteOpenHelper {
                 MedicationContract.MedicationEntry.COL_START_DATE + " TEXT NOT NULL, " +
                 MedicationContract.MedicationEntry.COL_END_DATE + " TEXT NOT NULL " +
 
-                MedicationContract.MedicationEntry.COL_USER_ID + " TEXT NOT NULL " +
+                MedicationContract.MedicationEntry.COL_USER_ID + " TEXT NOT NULL" +
                 ");";
         db.execSQL(SQL_Create_MEDICATION_Table);
 
