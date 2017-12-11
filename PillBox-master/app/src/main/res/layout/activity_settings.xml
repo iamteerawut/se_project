@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.pillbox.activity.AddMedActivity"
-    android:background="@drawable/setting">
+    android:background="@drawable/bg_setting">
 
     <LinearLayout
         android:orientation="vertical"
