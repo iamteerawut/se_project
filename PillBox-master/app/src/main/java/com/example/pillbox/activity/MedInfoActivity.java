@@ -221,8 +221,8 @@ public class MedInfoActivity extends AppCompatActivity {
         cv.put(MedicationContract.MedicationEntry.COL_AMOUNT, mAmount.getText().toString());
         cv.put(MedicationContract.MedicationEntry.COL_UNITS, mUnitsSpinner.getSelectedItem().toString());
 
-        cv.put(MedicationContract.MedicationEntry.COL_START_DATE, mStartDate.getText().toString());
-        cv.put(MedicationContract.MedicationEntry.COL_START_DATE, mEndDate.getText().toString());
+//        cv.put(MedicationContract.MedicationEntry.COL_START_DATE, mStartDate.getText().toString());
+//        cv.put(MedicationContract.MedicationEntry.COL_START_DATE, mEndDate.getText().toString());
 
         mMedListDb.update(table, cv, "_ID="+id, null);
         mMedListDb.close();
