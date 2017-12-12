@@ -31,11 +31,9 @@ public class ReportFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_report, container, false);
-        ProgressBar _progressBar = (ProgressBar)rootView.findViewById (R.id.circularProgressBar);
-        _progressBar.setProgress( 30 );
-        ((TextView) rootView.findViewById(R.id.textView1)).setText("20%");
-
-
+//        ProgressBar _progressBar = (ProgressBar)rootView.findViewById (R.id.circularProgressBar);
+//        _progressBar.setProgress( 30 );
+//        ((TextView) rootView.findViewById(R.id.textView1)).setText("20%");
         return rootView;
     }
 }

@@ -26,6 +26,7 @@
             android:textSize="30sp" />
 
         <TextView
+            android:layout_marginTop="5dp"
             android:id="@+id/date_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -36,6 +37,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:layout_marginTop="10dp"
         android:paddingTop="5dp"
         android:paddingBottom="5dp"
         android:paddingLeft="16dp"
@@ -43,7 +45,6 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/med_display_recycler_view"
