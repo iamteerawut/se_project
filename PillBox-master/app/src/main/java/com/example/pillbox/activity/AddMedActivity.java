@@ -220,7 +220,15 @@ public class AddMedActivity extends AppCompatActivity {
         int amt = Integer.parseInt(amount);
         int freq = freqMorning + freqAfternoon + freqEvening + freqNight;
         int dos = Integer.parseInt(dosage);
-        int daysAdd = amt / (freq * dos);
+        int be_af;
+        if(beforeFood.equals("ก่อนและหลังอาหาร")){
+            be_af = 2;
+        }else be_af =1;
+
+        Log.i("BEFORE FOOD", beforeFood.toString());
+
+        int daysAdd = (amt / (freq * dos * be_af))-1;
+
         calendar.add(Calendar.DAY_OF_YEAR, daysAdd);
         String endDate = dateFormat.format(calendar.getTime());
         Log.d("START", startDate);
