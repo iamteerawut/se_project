@@ -1,18 +1,8 @@
 <resources>
-    <string name="app_name">PillBox</string>
-
-    <string name="text_pillbox">Pill Box</string>
-    <string name="text_display_meds">View Medications</string>
-    <string name="text_report">Report</string>
-
-    <string name="action_add_med">Add</string>
 
     <string name="med_name">ระบุชื่อยา</string>
     <string name="dosage">รับประทานครั้งละ </string>
-    <string name="frequency">Enter Frequency</string>
-    <string name="before_food">ก่อนอาหาร</string>
     <string name="amount">ปริมาณยาทั้งหมด</string>
-    <string name="units">หน่วย</string>
 
     <string name="med_name_label">ชื่อยา:</string>
     <string name="dosage_label">รับประทานครั้งละ:</string>
@@ -23,8 +13,6 @@
 
     <string name="start_date_label">Start Date:</string>
     <string name="end_date_label">End Date:</string>
-
-    <string name="units_prompt">ระบุหน่วย</string>
 
     <string-array name="units_array">
         <item>ช้อนชา</item>
@@ -37,7 +25,6 @@
         <item>อื่น ๆ </item>
     </string-array>
 
-    <string name="before_food_prompt">Select Before Food</string>
     <string-array name="before_food_array">
         <item>ก่อนและหลังอาหาร</item>
         <item>ก่อนอาหาร</item>
@@ -52,7 +39,6 @@
     <!--</string-array>-->
 
     <!-- Scan Med Instructions -->
-    <string name="scan_instruct_crop">Ensure Rectangle Covers All 4 Edges Of The Label</string>
     <string name="add_clinic">Add Clinic</string>
 
 </resources>

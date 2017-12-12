@@ -4,16 +4,12 @@
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="17" />
+        android:targetSdkVersion="26" />
     <!-- Accessing camera hardware -->
     <uses-feature android:name="android.hardware.camera" />
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-    <activity
-        android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
-        android:theme="@style/Base.Theme.AppCompat" />
 
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
@@ -22,7 +18,6 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="PillBox"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/MyMaterialTheme">
         <activity
