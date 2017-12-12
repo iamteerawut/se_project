@@ -20,17 +20,19 @@
             android:layout_height="match_parent">
 
             <ImageView
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"
                 android:id="@+id/iv_image"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/abc_btn_radio_material" />
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_view" />
 
             <TextView
+                android:layout_margin="4dp"
                 android:id="@+id/tv_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/iv_image"
-                android:gravity="center" />
+                android:layout_toRightOf="@+id/iv_image" />
 
             <TextView
                 android:id="@+id/tv_block"
@@ -39,7 +41,6 @@
                 android:layout_below="@+id/tv_text"
                 android:layout_toEndOf="@+id/iv_image"
                 android:layout_toRightOf="@+id/iv_image"
-                android:gravity="center"
                 android:text="Another Recyclerview Fragment" />
 
         </RelativeLayout>

@@ -20,11 +20,13 @@
             android:layout_height="match_parent">
 
             <ImageView
+                android:layout_margin="7dp"
                 android:id="@+id/iv_image"
                 android:layout_width="48dp"
                 android:layout_height="48dp" />
 
             <TextView
+                android:layout_margin="4dp"
                 android:id="@+id/tv_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -37,7 +39,6 @@
                 android:layout_below="@+id/tv_text"
                 android:layout_toEndOf="@+id/iv_image"
                 android:layout_toRightOf="@+id/iv_image"
-                android:gravity="center"
                 android:text="Another Recyclerview Fragment" />
 
         </RelativeLayout>
