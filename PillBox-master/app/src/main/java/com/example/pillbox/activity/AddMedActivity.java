@@ -37,7 +37,6 @@ public class AddMedActivity extends AppCompatActivity {
     private EditText mMedName;
     private EditText mDosage;
     private EditText mAmount;
-
     private Spinner mUnitsSpinner;
     private Spinner mBeforeFoodSpinner;
     private MultiSelectionSpinner mFreqSpinner;

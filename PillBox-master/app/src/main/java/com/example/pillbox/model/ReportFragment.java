@@ -33,7 +33,7 @@ public class ReportFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_report, container, false);
         ProgressBar _progressBar = (ProgressBar)rootView.findViewById (R.id.circularProgressBar);
         _progressBar.setProgress( 30 );
-        ((TextView) rootView.findViewById(R.id.textView1)).setText("50%");
+        ((TextView) rootView.findViewById(R.id.textView1)).setText("20%");
 
 
         return rootView;
