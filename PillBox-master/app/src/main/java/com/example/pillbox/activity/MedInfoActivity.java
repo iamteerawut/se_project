@@ -12,6 +12,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -27,10 +28,14 @@ import android.widget.Toast;
 import com.example.pillbox.Medication;
 import com.example.pillbox.MultiSelectionSpinner;
 import com.example.pillbox.R;
+import com.example.pillbox.TakeMedication;
 import com.example.pillbox.data.MedicationContract;
 import com.example.pillbox.data.MedicationDbHelper;
+import com.example.pillbox.model.PillBoxFragment;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class MedInfoActivity extends AppCompatActivity {
@@ -45,7 +50,7 @@ public class MedInfoActivity extends AppCompatActivity {
     private EditText mEndDate;
     private SQLiteDatabase mMedListDb;
     private CoordinatorLayout coordinatorLayout;
-
+    Calendar dateTime = Calendar.getInstance();
     private Button delete_btn;
 
     @Override
@@ -93,6 +98,7 @@ public class MedInfoActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         // Enable the Up button
         actionBar.setDisplayHomeAsUpEnabled(true);
+        //delete data from DB
         delete_btn = (Button) findViewById(R.id.delete_btn);
 
         // Get the MED_ID of the card view
@@ -164,6 +170,7 @@ public class MedInfoActivity extends AppCompatActivity {
         } else if (id == R.id.action_menu_done) {
             setResult(RESULT_OK);
             updateMedInfo();
+
             this.finish();
             // Create custom toast
             LayoutInflater inflater = getLayoutInflater();
@@ -216,7 +223,8 @@ public class MedInfoActivity extends AppCompatActivity {
 
         cv.put(MedicationContract.MedicationEntry.COL_START_DATE, mStartDate.getText().toString());
         cv.put(MedicationContract.MedicationEntry.COL_START_DATE, mEndDate.getText().toString());
-        mMedListDb.update(table, cv, "_id="+id, null);
+
+        mMedListDb.update(table, cv, "_ID="+id, null);
         mMedListDb.close();
     }
 
@@ -288,8 +296,6 @@ public class MedInfoActivity extends AppCompatActivity {
         builder.show();
 
 
-
     }
-
 
 }

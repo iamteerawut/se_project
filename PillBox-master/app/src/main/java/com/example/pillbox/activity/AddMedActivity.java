@@ -86,9 +86,6 @@ public class AddMedActivity extends AppCompatActivity {
 
 
         mPrevActivity = getIntent().getStringExtra("PREV_ACTIVITY");
-        if(mPrevActivity.equals("ScanMedActivity")){
-            autoFillInput();
-        }
 
     }
 

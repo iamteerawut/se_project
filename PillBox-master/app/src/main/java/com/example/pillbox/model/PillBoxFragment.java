@@ -64,6 +64,10 @@ public class PillBoxFragment extends Fragment {
                         "WHERE " +
                         "startDate <= " + "'"+currDate+ "'"
                         + " AND " + "endDate >= " + "'"+currDate+ "'" , null);
+
+        while(cursor.moveToNext()){
+            Log.i("TODAY", cursor.getString(0)+cursor.getString(1)+cursor.getString(2)+ currDate);
+        }
         return cursor;
     }
 
@@ -87,6 +91,7 @@ public class PillBoxFragment extends Fragment {
         ArrayList<TakeMedication> mTakeMedNightList = new ArrayList<>();
 
         Cursor cursor = getMedsForToday();
+
         if (cursor.moveToFirst()){
             do{
                 int medId =  (int)cursor.getLong(cursor.getColumnIndex("_id"));
