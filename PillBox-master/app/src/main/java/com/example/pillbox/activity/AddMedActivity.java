@@ -83,6 +83,7 @@ public class AddMedActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         // Enable the Up button
         actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayShowTitleEnabled(false);
 
 
         mPrevActivity = getIntent().getStringExtra("PREV_ACTIVITY");
