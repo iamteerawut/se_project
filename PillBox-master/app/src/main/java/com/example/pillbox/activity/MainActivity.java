@@ -6,6 +6,7 @@ import android.app.FragmentTransaction;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
@@ -23,6 +24,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 
 import com.example.pillbox.R;
 import com.example.pillbox.adapter.NotificationPublisher;
@@ -69,11 +71,34 @@ public class MainActivity extends AppCompatActivity {
         }
         cursor.close();
 
+        MedicationDbHelper medicationDBHelper = new MedicationDbHelper(getApplicationContext());
+//      Test DB
+        String[] columns =  {MedicationContract.MedicationEntry._ID
+                , MedicationContract.MedicationEntry.COL_MED_NAME, MedicationContract.MedicationEntry.COL_AMOUNT,
+                MedicationContract.MedicationEntry.COL_START_DATE, MedicationContract.MedicationEntry.COL_END_DATE, MedicationContract.MedicationEntry.COL_MORNING,
+                MedicationContract.MedicationEntry.COL_DOSAGE};
+
+        Cursor cursor2 = medicationDbHelper.getReadableDatabase().query(MedicationContract.MedicationEntry.TABLE_NAME
+                , columns
+                , null
+                , null
+                , null
+                , null
+                ,  MedicationContract.MedicationEntry.COL_MED_NAME+" DESC");
+
+        while(cursor2.moveToNext()){
+            Log.i("DB TEST", cursor2.getString(0)+cursor2.getString(1)+cursor2.getString(2)+cursor2.getString(3)
+                    +cursor2.getString(4)+cursor2.getString(5)+cursor2.getString(6));
+        }
+        Log.i("Db", "insert data in to database");
+//
+
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
 
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
         // Replace Icon
         final Drawable settings = getResources().getDrawable(R.drawable.ic_settings_white);
         getSupportActionBar().setHomeAsUpIndicator(settings);

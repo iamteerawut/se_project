@@ -15,9 +15,7 @@ import com.example.pillbox.R;
 
 import java.util.ArrayList;
 
-/**
- * Created by luishengjie on 5/6/17.
- */
+
 
 public class DisplayMedsAdapter extends RecyclerView.Adapter<DisplayMedsAdapter.DisplayMedsViewHolder> {
 

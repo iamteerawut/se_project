@@ -54,6 +54,7 @@ public class SettingsActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         // Enable the Up button
         actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayShowTitleEnabled(false);
 
         mSetMorning = (TextView)findViewById(R.id.set_morning);
         mSetAfternoon = (TextView)findViewById(R.id.set_afternoon);
