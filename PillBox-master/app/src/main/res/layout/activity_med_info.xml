@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.pillbox.activity.MedInfoActivity"
-    android:id="@+id/coordinatorLayout">
+    android:id="@+id/coordinatorLayout"
+    android:background="@drawable/bg_view_pill">
 
     <Button
         android:id="@+id/delete_btn"
