@@ -85,7 +85,6 @@ public class AddMedActivity extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowTitleEnabled(false);
 
-
         mPrevActivity = getIntent().getStringExtra("PREV_ACTIVITY");
 
     }
