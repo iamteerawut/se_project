@@ -98,6 +98,8 @@ public class MedInfoActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         // Enable the Up button
         actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayShowTitleEnabled(false);
+
         //delete data from DB
         delete_btn = (Button) findViewById(R.id.delete_btn);
 
