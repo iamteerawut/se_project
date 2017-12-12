@@ -48,7 +48,11 @@
             android:id="@+id/med_display_recycler_view"
             android:layout_width="match_parent"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:layout_height="345dp"
+=======
+            android:layout_height="380dp"
+>>>>>>> 738852d60798a912db351e2b037d53a2b667b56b
 =======
             android:layout_height="380dp"
 >>>>>>> 738852d60798a912db351e2b037d53a2b667b56b
