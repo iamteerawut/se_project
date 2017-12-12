@@ -24,6 +24,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 
 import com.example.pillbox.R;
 import com.example.pillbox.adapter.NotificationPublisher;
@@ -97,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
         // Replace Icon
         final Drawable settings = getResources().getDrawable(R.drawable.ic_settings_white);
         getSupportActionBar().setHomeAsUpIndicator(settings);
