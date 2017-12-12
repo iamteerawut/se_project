@@ -4,10 +4,6 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-/**
- * Created by luishengjie on 23/6/17.
- */
-
 public class TakeMedicationDbHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "medication.db";
     private  static final int DATABASE_VERSION = 1;

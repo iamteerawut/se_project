@@ -16,11 +16,6 @@ import com.example.pillbox.activity.TakeMedActivity;
 
 import java.util.ArrayList;
 
-/**
- * Provide a binding from TakeMedication data in PillBoxFragment to CardView: card_take_meds displayed within RecyclerView.
- * Created by luishengjie on 23/6/17.
- */
-
 public class TakeMedsAdapter extends RecyclerView.Adapter<TakeMedsAdapter.TakeMedsViewHolder> {
     private ArrayList<TakeMedication> mMedData;
     private Context mContext;

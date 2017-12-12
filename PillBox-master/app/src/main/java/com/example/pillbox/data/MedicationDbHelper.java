@@ -4,11 +4,6 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-/**
- * Manage database creation and version management of medication.db
- * Created by luishengjie on 5/6/17.
- */
-
 public class MedicationDbHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "medication.db";
     // Store current database version

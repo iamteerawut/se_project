@@ -1,9 +1,5 @@
 package com.example.pillbox;
 
-/**
- * Created by luishengjie on 23/6/17.
- */
-
 public class TakeMedication {
     private int medId;
     private String medName;

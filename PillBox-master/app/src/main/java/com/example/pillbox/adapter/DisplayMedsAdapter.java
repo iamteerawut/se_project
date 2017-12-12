@@ -15,8 +15,6 @@ import com.example.pillbox.R;
 
 import java.util.ArrayList;
 
-
-
 public class DisplayMedsAdapter extends RecyclerView.Adapter<DisplayMedsAdapter.DisplayMedsViewHolder> {
 
     private ArrayList<Medication> mMedData;

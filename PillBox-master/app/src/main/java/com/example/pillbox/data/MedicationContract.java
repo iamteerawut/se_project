@@ -2,10 +2,6 @@ package com.example.pillbox.data;
 
 import android.provider.BaseColumns;
 
-/**
- * Created by luishengjie on 5/6/17.
- */
-
 public class MedicationContract {
     // Create an inner class MedicationEntry that implements the BaseColumns interface
     // Do not need to create _ID, BaseColumns does that automatically

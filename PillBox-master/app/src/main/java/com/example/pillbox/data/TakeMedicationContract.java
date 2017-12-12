@@ -2,10 +2,6 @@ package com.example.pillbox.data;
 
 import android.provider.BaseColumns;
 
-/**
- * Created by luishengjie on 23/6/17.
- */
-
 public class TakeMedicationContract {
 
     // Do not need to create _ID, BaseColumns does that automatically
